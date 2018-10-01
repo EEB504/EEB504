@@ -1,0 +1,45 @@
+---
+title: "Version control"
+author: "Charlotte Chang"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Version control
+
+What we'll be covering:
+
+- What is git and GitHub?
+- Why do it?
+- How to use it?
+
+## What is git?
+
+[Git](http://git-scm.com/) is a *version control system* designed to help people who write code (developers) work in real-time on a shared set of scripts and other software projects. It was originally developed by [Linus Torvalds](https://www.linuxfoundation.org/blog/2015/04/10-years-of-git-an-interview-with-git-creator-linus-torvalds/) as a tool for Linux developers. One can imagine how many moving pieces there would be and how many hands would be on deck to issue a major release of a Linux distribution! It's similar to "Track Changes" in Microsoft Word but far, far more powerful. Imagine if Track Changes let you:
+
+* maintain different versions of your document without having to have a bunch of files floating around with titles such as ManuscriptV1.docx and ManuscriptV2.docx;
+* make changes with collaborators and revert your document to a previous time point;
+* not have to worry about editing the "right" version of a document that you share with collaborators.
+    + On this last point, who among us has not shared the unique agony of working on a complex, large document with multiple collaborators, submitted extensive edits, and then realized that you wrote your comments on the the **wrong file** (e.g. BigTimeCodeProjectv14.R not BigTimeCodeProjectv15.R).
+
+## What is GitHub?
+ 
+[GitHub](https://github.com/) is one of several mainstream hosting services. Practically, what that means is that GitHub will mirror all of the files in a repository (more or less a folder) online. In that sense, it is pretty similar to DropBox or GoogleDrive.
+
+## Why use git + GitHub?
+
+(Note that this would apply equally to other hosting services such as [Bitbucket](https://bitbucket.org/) and [GitLab](https://about.gitlab.com/)).
+
+* More streamlined versioning of your code, documents, and even data!
+* Easier collaboration
+* Hosting means that if your machine crashes (or if you get caught in a git snarl), you can always recover a current or previous version of your document.
+* Moreover, hosting means that your work is more easily accessible and discoverable to the community.
+
+## How?
+
+Exercises coming soon
+
+* Broken toy code (amniote functions?)
+* Add tabs to the website as an exercise?
+
+

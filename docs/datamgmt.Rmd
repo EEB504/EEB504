@@ -1,0 +1,35 @@
+---
+title: "Data Management Pipelines"
+author: "Charlotte Chang & Lou Gross"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Data Management Pipelines
+
+In this lecture, we will cover:
+
+* data annotation
+* data management piplines
+* metadata
+* reproducibility
+* versioning your data
+
+## Why should I care about data management?
+
+* Project edits and manuscript revisions...sometimes many months (or years!) down the line
+* Maximizing the benefit of your work to the scientific community and society
+* Facilitate collaborations based on your contributions
+
+## The Data Life Cycle
+
+![](https://www.dataone.org/sites/all/images/DLC2015_sm.png)
+
+[DataONE](https://www.dataone.org/data-life-cycle) has an excellent overview of the steps in a data management and analysis pipeline.
+
+## Best practices
+
+We will be presenting an overview of this [DataONE Primer](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
+
+Another resource is [Shuai's AI & Data Blog](https://shuaiw.github.io/2017/07/30/versioning-data-science.html) which has practical insights from an experienced data scientist and startup founder.
+

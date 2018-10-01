@@ -15,3 +15,6 @@ navbar:
     - text: "Machine Learning"
       icon: fa-chart-bar
       href: mlintro.html
+    - text: "Miscellania & Useful Resources"
+      icon: fa-desktop
+      href: miscoutlink.html

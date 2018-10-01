@@ -1,0 +1,17 @@
+---
+title: "A brief teaser of some Machine Learning Techniques"
+author: "Charlotte Chang & Nikhil Deshmukh"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Machine Learning
+
+Overview:
+
+* What is it?
+* What can it do?
+* Map of approaches --> Questions
+* Example
+
+More to come.

@@ -1,0 +1,31 @@
+---
+title: "Miscellania and Useful Resources"
+author: "Charlotte Chang & Nikhil Deshmukh"
+date: "10/1/2018"
+output: html_document
+---
+
+# What is this page about?
+
+As open and reproducible science has gained momentum, there has been a push towards transparent and *free* resources to build your skills on a wide variety of topics. Here are some of our favorite resources below.
+
+## Statistical resources
+
+- [Statistical Inference for data science](https://rpubs.com/rellison/89834) 
+    + Co-developed by [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/), co-host of [Not So Standard Deviations](http://nssdeviations.com/) with an Rstats star [Hilary Parker](https://twitter.com/hspter) 
+- [Geocomputation with R](https://geocompr.robinlovelace.net/intro.html)
+    + An amazing resource by several geographers that gets into modern spatial computing and visualization tools in R
+- [Statistical Rethinking](https://github.com/rmcelreath/rethinking)
+    + A course for biostatisticians trained in the frequentist tradition looking to master modern Bayesian computational techniques.
+    + The author, [Richard McElreath](http://xcelab.net/rm) is a distinguished quantitative anthropologist and his research focuses on big questions in cultural anthropology such as the evolution of human distinctiveness (with examples including skill acquisition). 
+    + The course lectures are also online at [YouTube](https://www.youtube.com/watch?v=oy7Ks3YfbDg&list=PLDcUM9US4XdM9_N6XUUFrhghGJ4K25bFc)
+- And of course, the OG himself, [Hadley Wickham](hadley.nz). [R for Data Science](http://r4ds.had.co.nz/) is a great applied overview about what R can do for you and your analyses.
+
+## Computational Resources
+
+- [swirl](https://swirlstats.com/): A package that teaches you how to learn R ... in R!     + A pretty amazing resource that I would have loved to have as an undergrad struggling to learn R and Perl
+- [happygitwithr](http://happygitwithr.com/big-picture.html): A very practical and straightforward introduction to Git written by the one and only Prof. [Jenny Bryan](https://github.com/jennybc). 
+    + I've found her bookdown resources to be super helpful.
+- [The Pirate's Guide to R](https://bookdown.org/ndphillips/YaRrr/): Both entertaining and a practical introduction to R
+- [Stack Overflow](https://stackoverflow.com): For pretty much any problem you run into, Stack Overflow has a possible solution.
+    

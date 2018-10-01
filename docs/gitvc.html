@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Charlotte Chang" />
+
+<meta name="date" content="2018-10-01" />
+
+<title>Version control</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">UTK EEB 504</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="datamgmt.html">
+    <span class="fa fa-table"></span>
+     
+    Data Management
+  </a>
+</li>
+<li>
+  <a href="gitvc.html">
+    <span class="fa fa-git-square"></span>
+     
+    Version Control
+  </a>
+</li>
+<li>
+  <a href="mlintro.html">
+    <span class="fa fa-chart-bar"></span>
+     
+    Machine Learning
+  </a>
+</li>
+<li>
+  <a href="miscoutlink.html">
+    <span class="fa fa-desktop"></span>
+     
+    Miscellania &amp; Useful Resources
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Version control</h1>
+<h4 class="author"><em>Charlotte Chang</em></h4>
+<h4 class="date"><em>2018-10-01</em></h4>
+
+</div>
+
+
+<div id="version-control" class="section level1">
+<h1>Version control</h1>
+<p>What we’ll be covering:</p>
+<ul>
+<li>What is git and GitHub?</li>
+<li>Why do it?</li>
+<li>How to use it?</li>
+</ul>
+<div id="what-is-git" class="section level2">
+<h2>What is git?</h2>
+<p><a href="http://git-scm.com/">Git</a> is a <em>version control system</em> designed to help people who write code (developers) work in real-time on a shared set of scripts and other software projects. It was originally developed by <a href="https://www.linuxfoundation.org/blog/2015/04/10-years-of-git-an-interview-with-git-creator-linus-torvalds/">Linus Torvalds</a> as a tool for Linux developers. One can imagine how many moving pieces there would be and how many hands would be on deck to issue a major release of a Linux distribution! It’s similar to “Track Changes” in Microsoft Word but far, far more powerful. Imagine if Track Changes let you:</p>
+<ul>
+<li>maintain different versions of your document without having to have a bunch of files floating around with titles such as ManuscriptV1.docx and ManuscriptV2.docx;</li>
+<li>make changes with collaborators and revert your document to a previous time point;</li>
+<li>not have to worry about editing the “right” version of a document that you share with collaborators.
+<ul>
+<li>On this last point, who among us has not shared the unique agony of working on a complex, large document with multiple collaborators, submitted extensive edits, and then realized that you wrote your comments on the the <strong>wrong file</strong> (e.g. BigTimeCodeProjectv14.R not BigTimeCodeProjectv15.R).</li>
+</ul></li>
+</ul>
+</div>
+<div id="what-is-github" class="section level2">
+<h2>What is GitHub?</h2>
+<p><a href="https://github.com/">GitHub</a> is one of several mainstream hosting services. Practically, what that means is that GitHub will mirror all of the files in a repository (more or less a folder) online. In that sense, it is pretty similar to DropBox or GoogleDrive.</p>
+</div>
+<div id="why-use-git-github" class="section level2">
+<h2>Why use git + GitHub?</h2>
+<p>(Note that this would apply equally to other hosting services such as <a href="https://bitbucket.org/">Bitbucket</a> and <a href="https://about.gitlab.com/">GitLab</a>).</p>
+<ul>
+<li>More streamlined versioning of your code, documents, and even data!</li>
+<li>Easier collaboration</li>
+<li>Hosting means that if your machine crashes (or if you get caught in a git snarl), you can always recover a current or previous version of your document.</li>
+<li>Moreover, hosting means that your work is more easily accessible and discoverable to the community.</li>
+</ul>
+</div>
+<div id="how" class="section level2">
+<h2>How?</h2>
+<p>Exercises coming soon</p>
+<ul>
+<li>Broken toy code (amniote functions?)</li>
+<li>Add tabs to the website as an exercise?</li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
