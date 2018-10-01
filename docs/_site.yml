@@ -18,3 +18,7 @@ navbar:
     - text: "Miscellania & Useful Resources"
       icon: fa-desktop
       href: miscoutlink.html
+output:
+  html_document:
+    theme: flatly
+    css: style.css
