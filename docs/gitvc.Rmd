@@ -23,7 +23,7 @@ What we'll be covering:
     + On this last point, who among us has not shared the unique agony of working on a complex, large document with multiple collaborators, submitted extensive edits, and then realized that you wrote your comments on the the **wrong file** (e.g. BigTimeCodeProjectv14.R not BigTimeCodeProjectv15.R).
 
 ## What is GitHub?
- 
+
 [GitHub](https://github.com/) is one of several mainstream hosting services. Practically, what that means is that GitHub will mirror all of the files in a repository (more or less a folder) online. In that sense, it is pretty similar to DropBox or GoogleDrive.
 
 ## Why use git + GitHub?
@@ -42,4 +42,6 @@ Exercises coming soon
 * Broken toy code (amniote functions?)
 * Add tabs to the website as an exercise?
 
+### The pain of git
 
+Professor Jenny Bryan's [bookdown](http://happygitwithr.com/big-picture.html) (the inspiration for this part of the course) and her [comic relief](http://happygitwithr.com/rmd-test-drive.html) tab arguably says it best.
