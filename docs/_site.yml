@@ -1,0 +1,17 @@
+name: "utk_eeb_504"
+output_dir: "."
+navbar:
+  title: "UTK EEB 504"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Data Management"
+      icon: fa-table
+      href: datamgmt.html
+    - text: "Version Control"
+      icon: fa-git-square
+      href: gitvc.html
+    - text: "Machine Learning"
+      icon: fa-chart-bar
+      href: mlintro.html
