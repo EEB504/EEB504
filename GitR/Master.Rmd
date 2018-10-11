@@ -1,0 +1,90 @@
+---
+title: "MasterFile"
+author: "Charlotte Chang"
+date: "10/10/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+### Key git commands:
+
+* `git status`
+* `git add`
+* `git diff --cached`
+    + contrast against `git diff` before and after `git add`
+* `git commit -m`
+* `git push -u origin <BRANCHNAME>`
+    + usually: `git push -u origin master`
+* `git pull`
+* `git unstage head`
+* `git merge`
+
+### Example exercises
+
+* amniote? - read in a dirty version
+* plot of body mass against rmax
+* calculation of central tendency
+
+```{r amniote_data_construction, include=FALSE, eval=FALSE}
+source("~/GoogleDrive/Rscripts/GenFxns/amniote.R")
+load("~/GoogleDrive/Rscripts/PantropSDH/rcoleIUCN.rda")
+
+### Isolating mammalian herbivores
+rcole_df$Order <- find.taxa(rcole_df$Species, level="Order")
+rcole_df$Herbivory <- extract_traits(rcole_df$Species)
+rcole_df$Herbivore <- ifelse(rcole_df$Herbivory > 0.9, 1, 0) # Pineda-Munoz and Alroy 
+    # Subsetting to herbivores
+herbivore_df <- rcole_df[which(rcole_df$Herbivore==1 & rcole_df$MassKG >= 1 & rcole_df$Order != "Primates" & rcole_df$Order != "Pilosa" & rcole_df$Order != "Rodentia"),]
+herbivore_df$rMax[herbivore_df$rMax < 0.1] <- c( mean(herbivore_df$rMax[grep("Lepus",herbivore_df$Species)]),exp(-3), 0.39)
+
+### Dirty herbivore dataset
+set.seed(100)
+dirtivore_df <- herbivore_df[,c(1:3,6,8)]
+    # Dirty up rMax
+mess_inds <- sample(1:nrow(dirtivore_df), 20, replace=F)
+dirtivore_df$rMax[mess_inds] <- paste(dirtivore_df$rMax[mess_inds],"x0aso00",collapse = "")
+    # Dirty up MassKG
+mess_inds <- sample(1:nrow(dirtivore_df), 20, replace=F)
+dirtivore_df$MassKG[mess_inds] <- paste(dirtivore_df$MassKG[mess_inds],"pewpewpew",collapse = "")
+
+save(file="~/GoogleDrive/JobMaterials/EEB504/EEB504/GitR/dirtivore.rda", dirtivore_df)
+```
+
+```{r dirtivore_problems}
+str(herbivore_df)
+str(dirtivore_df)
+
+summary(herbivore_df$rMax)
+
+summary(herbivore_df$MassKG)
+
+summary(dirtivore_df$rMax)
+
+summary(dirtivore_df$MassKG)
+```
+
+Subsequently:
+
+* They fix breaks in code in small groups
+
+```{r}
+# Find how many are non-numeric
+# Subset to the non-numerics
+# Show the pattern
+# gsub
+
+```
+
+
+* They fix a broken Rmd file to get the html to look nice
+
+
+* They add tabs to the website in small groups
+
+### Convert this into ioslides
+
