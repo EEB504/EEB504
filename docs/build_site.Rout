@@ -1,59 +1,0 @@
-
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> #Set our working directory. 
->   # Taken pretty much directly from: http://nickstrayer.me/RMarkdown_Sites_tutorial/
-> #This helps avoid confusion if our working directory is 
-> #not our site because of other projects we were 
-> #working on at the time. 
-> setwd("~/GoogleDrive/JobMaterials/EEB504/EEB504/docs/")
-> 
-> #render your sweet site. 
-> rmarkdown::render_site()
-  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
-   inline R code fragments
-
-
-/usr/local/bin/pandoc +RTS -K512m -RTS datamgmt.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output datamgmt.html --smart --email-obfuscation none --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b3ffae070.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b6fa4f9e0.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
-   inline R code fragments
-
-
-/usr/local/bin/pandoc +RTS -K512m -RTS gitvc.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output gitvc.html --smart --email-obfuscation none --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b295e0838.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b5c6da9bf.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
-   inline R code fragments
-
-
-/usr/local/bin/pandoc +RTS -K512m -RTS index.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output index.html --smart --email-obfuscation none --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9baf03379.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b1fc3528b.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
-  ordinary text without R code
-
-
-/usr/local/bin/pandoc +RTS -K512m -RTS miscoutlink.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output miscoutlink.html --smart --email-obfuscation none --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b4f194818.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b4cc483a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
-   inline R code fragments
-
-
-/usr/local/bin/pandoc +RTS -K512m -RTS mlintro.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output mlintro.html --smart --email-obfuscation none --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b3f82c2e3.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /var/folders/wr/jw5mn9rn24zgpmtvrqxxfw9w0000gn/T//RtmpPLjYWd/rmarkdown-str6f9b21c8e5a8.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
-
-Output created: index.html
-> 
-> proc.time()
-   user  system elapsed 
-  1.987   0.498   3.679 

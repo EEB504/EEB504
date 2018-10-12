@@ -52,10 +52,13 @@ dirtivore_df$rMax[mess_inds] <- paste(dirtivore_df$rMax[mess_inds],"x0aso00",col
 mess_inds <- sample(1:nrow(dirtivore_df), 20, replace=F)
 dirtivore_df$MassKG[mess_inds] <- paste(dirtivore_df$MassKG[mess_inds],"pewpewpew",collapse = "")
 
-save(file="~/GoogleDrive/JobMaterials/EEB504/EEB504/GitR/dirtivore.rda", dirtivore_df)
+save(file="~/GoogleDrive/JobMaterials/EEB504/EEB504/GitR/dirtivore.RData", dirtivore_df)
+
+write.csv(dirtivore_df, file="dirtivore.csv")
 ```
 
 ```{r dirtivore_problems}
+load("dirtivore.rda")
 str(herbivore_df)
 str(dirtivore_df)
 
@@ -77,7 +80,7 @@ Subsequently:
 # Subset to the non-numerics
 # Show the pattern
 # gsub
-
+# plot rmax ~ log body mass
 ```
 
 
