@@ -1,0 +1,12 @@
+METADATA FOR DIRTIVORE FILES
+
+dirtivore.rda or dirtivore.csv contains a "dirty" version of herbivore mammalian life history data.
+These data were extracted from the amniote database (https://onlinelibrary.wiley.com/doi/abs/10.1890/15-0846R.1).
+
+Column 1: Species	(Character string of Latin binomial for each species)
+
+Column 2: rMax (Intrinsic rate of increase in units of 1/year; rate of population change for each species; should be numeric, corrupted to character)
+
+Column 3: MassKG (Body mass in kilograms for each species; should be numeric, corrupted to character)
+
+Column 4: Herbivory (Score of 1 for herbivores)
